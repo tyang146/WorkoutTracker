@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Workout Tracker</string>
+    <string name="Activity">Workout</string>
+    <string name="Settings">Settings</string>
+    <string name="NewEntry">New Workout Entry</string>
+    <string name="Duration">Duration (minutes)</string>
+    <string name="Description">Description</string>
+    <string name="Submit">Submit</string>
+    <string name="Date">Date:</string>
+    <string name="Plus">+</string>
+    <string name="SaveSettings">Save Settings</string>
+    <string name="EnableDarkMode">Enable DarkMode</string>
+    <string name="Intensity">Intensity (1–18)</string>
+    <string name="Weight">Weight(kg):</string>
+    <string name="_63">63</string>
+    <string name="CardText">Card Text</string>
+    <string name="Help">Help</string>
+
+    <string-array name="activities_categories">
+        <item>Basketball, game – 8.0</item>
+        <item>Boxing, general – 12.0</item>
+        <item>Calisthenics, heavy – 8.0</item>
+        <item>Circuit training, general – 8.0</item>
+        <item>Fast running, 10.9 mph – 18.0</item>
+        <item>Football, competitive – 9.0</item>
+        <item>Jogging, in place or 5 mph – 8.0</item>
+        <item>Jog/walk combination – 6.0</item>
+        <item>Judo, jujitsu, karate, – 10.0</item>
+        <item>Mild stretching – 3.0</item>
+        <item>Moderate walking, 3.5 mph – 6.0</item>
+        <item>Rope jumping, fast – 12.0</item>
+        <item>Rope jumping, moderate – 10.0</item>
+        <item>Running, 8 mph – 14</item>
+        <item>Running, 10 mph – 16.0</item>
+        <item>Soccer, general – 7.0</item>
+        <item>Softball or baseball, general – 5.0</item>
+        <item>Stair-treadmill ergometer – 9.0</item>
+        <item>Swimming laps, fast – 10.0</item>
+        <item>Swim. laps, slow – 7.0</item>
+        <item>Swimming, leisurely – 6.0</item>
+        <item>Swimming, sidestroke – 8.0</item>
+        <item>Tennis, general – 7.0</item>
+        <item>Walking for pleasure – 4.0</item>
+        <item>Walking, 4.0 mph – 5.0</item>
+        <item>Walking, 5.0 mph – 8.0</item>
+        <item>Weightlifting, bodybuilding – 6.0</item>
+        <item>Wrestling (5 min) – 6.0</item>
+        <item>Volleyball – 4.0</item>
+        <item>Volleyball, beach – 8.0</item>
+    </string-array>
+
+    <string-array name="date_categories">
+        <item>All</item>
+        <item>Today</item>
+        <item>Past Week</item>
+        <item>Past Month</item>
+        <item>Past 6 Months</item>
+        <item>Past Year</item>
+    </string-array>
+
+    <string-array name="date_formats">
+        <item>YYYY-MM-DD</item>
+    </string-array>
+
+</resources>

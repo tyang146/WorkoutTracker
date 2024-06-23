@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/lessonsActivityDrawerLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundColor"
+    tools:context=".activities.SettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/mainTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredoka_one"
+            android:background="@color/primaryColor"
+            android:text="@string/Settings"
+            android:textColor="@color/titleColor"
+            android:textSize="38sp"
+            android:textAlignment="center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/upperHorizontalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.14" />
+
+        <Button
+            android:id="@+id/saveSettingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonBackground"
+            android:drawableEnd="@drawable/checkmark"
+            android:fontFamily="@font/raleway"
+            android:outlineProvider="none"
+            android:text="@string/SaveSettings"
+            android:textAllCaps="false"
+            android:textColor="@color/secondaryColor"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnToggleDark" />
+
+        <Button
+            android:id="@+id/btnToggleDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/buttonBackground"
+            android:drawableEnd="@drawable/ic_baseline_nights_stay_24"
+            android:fontFamily="@font/raleway"
+            android:outlineProvider="none"
+            android:text="@string/EnableDarkMode"
+            android:textAllCaps="false"
+            android:textColor="@color/secondaryColor"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.582"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightEditText" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:backgroundTint="@color/buttonBackground"
+            android:fontFamily="@font/raleway"
+            android:text="@string/Weight"
+            android:textColor="@color/secondaryColor"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainTitleTextView" />
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:autofillHints="63"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/_63"
+            android:inputType="number"
+            android:maxLength="3"
+            android:text="@string/_63"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

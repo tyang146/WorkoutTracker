@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".activities.MainMenuActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/upperHorizontalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <TextView
+        android:id="@+id/mainMenuTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:paddingStart="6dp"
+        android:paddingEnd="0dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/mainTitleColor"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upperHorizontalGuideline" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainMenuTitleTextView"
+            app:layout_constraintBottom_toTopOf="@id/lowerHorizontalGuideline"
+            tools:ignore="ExtraText">
+
+            <Button
+                android:id="@+id/workoutsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonBackground"
+                android:drawableLeft="@drawable/running"
+                android:drawableTint="@color/secondaryColor"
+                android:fontFamily="@font/raleway"
+                android:gravity="start"
+                android:outlineProvider="none"
+                android:text="@string/Activity"
+                android:textAllCaps="false"
+                android:textColor="@color/secondaryColor"
+                android:textSize="22sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/helpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonBackground"
+                android:drawableLeft="@drawable/question_mark"
+                android:drawableTint="@color/secondaryColor"
+                android:fontFamily="@font/raleway"
+                android:gravity="start"
+                android:outlineProvider="none"
+                android:text="@string/Help"
+                android:textAllCaps="false"
+                android:textColor="@color/secondaryColor"
+                android:textSize="22sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/settingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonBackground"
+                android:drawableLeft="@drawable/settings"
+                android:drawableTint="@color/secondaryColor"
+                android:fontFamily="@font/raleway"
+                android:gravity="start"
+                android:outlineProvider="none"
+                android:text="@string/Settings"
+                android:textAllCaps="false"
+                android:textColor="@color/secondaryColor"
+                android:textSize="22sp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lowerHorizontalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.66"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
