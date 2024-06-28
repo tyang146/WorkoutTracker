@@ -8,7 +8,6 @@ This repository contains a comprehensive Android application designed to help yo
 - **Settings**: Set weight and enable or disable dark mode
 
 ## Technologies Used
-- **Frontend**
-  - Java
+- Java
 
 ## Getting Started
