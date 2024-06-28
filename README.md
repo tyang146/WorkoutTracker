@@ -1,2 +1,14 @@
 # Workout Tracker
-Android app to log and plot workouts activities.
+
+## Overview
+This repository contains a comprehensive Android application designed to help you track and manage your exercises activities efficiently.
+
+## Features
+- **Workout Logging**: Record your workout activities and calculate calories burned
+- **Settings**: Set weight and enable or disable dark mode
+
+## Technologies Used
+- **Frontend**
+  - Java
+
+## Getting Started
