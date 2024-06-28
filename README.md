@@ -11,3 +11,4 @@ This repository contains a comprehensive Android application designed to help yo
 - Java
 
 ## Getting Started
+[Android Studio](https://developer.android.com/studio/run)
